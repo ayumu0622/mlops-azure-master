@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ayumuueda/Desktop/MLOps_learn/mlops-azure-master/mlruns/0/c2e33a6b64404d1ca78b3b5275387d76/artifacts
+end_time: 1717977873080
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c2e33a6b64404d1ca78b3b5275387d76
+run_name: upset-foal-813
+run_uuid: c2e33a6b64404d1ca78b3b5275387d76
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717977866049
+status: 3
+tags: []
+user_id: ayumuueda
