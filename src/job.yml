@@ -1,13 +1,15 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
 code: model
-command: >-
-  python3 train.py --data-folder ${{inputs.training_data}} --reg-rate ${{inputs.reg_rate}}
+command: >
+  python3 src/model/train.py --training_data ${{inputs.training_data}} --reg_rate ${{inputs.reg_rate}}
 inputs:
   training_data: 
     type: uri_folder 
     path: https://ayuml0622.blob.core.windows.net/mycontainer/data
-  reg_rate: 0.01
+  reg_rate:
+    type: number
+    default: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
-compute: azureml:ayuml0622compute
+compute: azureml:ayumucompute0622
 experiment_name: diabetes-experiment
 description: First Job 

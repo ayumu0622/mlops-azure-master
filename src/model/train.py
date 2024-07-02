@@ -44,7 +44,9 @@ def parse_args():
     parser = argparse.ArgumentParser()
 
     # add arguments
-    parser.add_argument("--training_data", dest='training_data',
+    parser.add_argument("--training_data", 
+                        dest='training_data',
+                        # default='mlops-azure-master/production/data',
                         type=str)
     parser.add_argument("--reg_rate", dest='reg_rate',
                         type=float, default=0.01)
