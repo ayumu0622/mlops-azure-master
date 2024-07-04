@@ -2,6 +2,8 @@ name: Manually trigger an Azure Machine Learning job
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ main ]
 
 jobs:
   train:
@@ -15,5 +17,7 @@ jobs:
       uses: azure/login@v1
       with:
         creds: ${{secrets.AZURE_CREDENTIALS}}
+    - name: submit a job
+      run: az ml job create --file src/job.yml --workspace-name mlops-learn-workspace2 --resource-group ayumu.justin.ueda-rg
 
 
