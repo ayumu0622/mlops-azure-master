@@ -8,12 +8,12 @@ on:
 permissions:
   id-token: write
   contents: read
-  
+
 jobs:
   train:
     runs-on: ubuntu-latest
     steps:
-    - name: Check out repo
+    - name: Check out repoo
       uses: actions/checkout@main
     - name: Install az ml extension
       run: az extension add -n ml -y
