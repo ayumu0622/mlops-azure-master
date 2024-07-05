@@ -1,0 +1,1 @@
+az role assignment list --scope /subscriptions/03d75812-c386-489a-b7f0-f0857223d962/resourceGroups/ayumu.justin.ueda-rg/providers/Microsoft.MachineLearningServices/workspaces/mlops-learn-workspace2/computes/ayumucompute0622
