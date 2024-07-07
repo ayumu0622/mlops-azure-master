@@ -10,5 +10,5 @@ inputs:
     path: azureml:diabetes-dev-folder:1
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: azureml:ayumulcompute0622
-experiment_name: diabetes-experiment
+experiment_name: diabetes-experiment-development
 description: First Job
